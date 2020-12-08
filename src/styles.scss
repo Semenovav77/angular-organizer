@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import './variables';
+@import './mixins';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  background: $white-color;
+  color: $darkgrey-color;
+}
+
+a {
+  color: $darkblue-color;
+  text-decoration: none;
+  &:hover {
+    color: $darkgrey-color;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  display: block;
+  width: 100%;
+  @include border-radius;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: auto;
+  padding: 40px 40px;
+}
+
+.btn {
+  display: inline-block;
+  background: $white-color;
+  color: $darkgrey-color;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  &:disabled {
+    background: $lightgrey-color;
+    color: $white-color;
+  }
+  &:hover:not(:disabled) {
+    opacity: 0.8;
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  background: $darkblue-color;
+  color: $white-color;
+}

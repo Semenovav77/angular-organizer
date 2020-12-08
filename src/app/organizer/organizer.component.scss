@@ -1,0 +1,16 @@
+.organizer-container {
+  border: 1px solid #000000;
+  padding: 20px;
+  .header {
+    margin-bottom: 10px;
+  }
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+
+}

@@ -1,0 +1,5 @@
+<div class="header-container">
+  <div class="material-icons" (click)="go(-1)">arrow_left</div>
+  <div class="month-name">{{dateService.date | async | moment}} {{dateService.x}}</div>
+  <div class="material-icons" (click)="go(1)">arrow_right</div>
+</div>
